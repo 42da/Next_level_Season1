@@ -12,6 +12,8 @@ public class _2455_지능형_기차 {
 
     // 승객
     int passenger = 0;
+    // 최댓값
+    int max = 0;
 
     for (int i = 0; i < 4; i++) {
 
@@ -19,12 +21,12 @@ public class _2455_지능형_기차 {
       String[] strArr = str.split(" "); // StringTokenizer
 
       // 승객 = (승객 - 내리는 사람 + 타는 사람)
-      int newPassenger = (passenger - Integer.parseInt(strArr[0]) + Integer.parseInt(strArr[1]));
-      passenger = Math.max(passenger, newPassenger);    // Math.max() : 최댓값 구하기
+      passenger = (passenger - Integer.parseInt(strArr[0]) + Integer.parseInt(strArr[1]));
+      max = Math.max(passenger, max);    // Math.max() : 최댓값 구하기
 
     }
 
-    System.out.println(passenger);
+    System.out.println(max);
 
   }
 
@@ -43,7 +45,7 @@ for (int i = 0; i < 4; i++) {
   String[] strArr = str.split(" "); // StringTokenizer
 
   // 승객 = (승객 - 내리는 사람 + 타는 사람)
-  int newPassenger = (passenger - Integer.parseInt(strArr[0]) + Integer.parseInt(strArr[1]));
+  passenger = (passenger - Integer.parseInt(strArr[0]) + Integer.parseInt(strArr[1]));
   passengerArr[i] = passenger;
 
 }
