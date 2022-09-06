@@ -23,3 +23,12 @@
   - Best: $O(n)$ -> 이동 없이 비교만 이루어짐.
   - Avg: $O(n^2)$
   - Worst: $O(n^2)$ -> 입력 자료 역순일 경우
+---
+## Merge Sort (합병정렬)
+특징
+- 안정적
+- 추가 기억장소 필요(제자리 정렬 x)
+- 시간복잡도:
+  - Best : $O(nlogn)$
+  - Avg: $O(nlogn)$
+  - Worst: $O(nlogn)$
