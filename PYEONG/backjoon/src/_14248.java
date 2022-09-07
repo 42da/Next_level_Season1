@@ -27,6 +27,8 @@ public class _14248 {
     public static void search(int[] arr, int position) {
         if (visited[position] == 0) {                   // 방문하지 않은 돌다리일 경우 방문 표시 +1
             visited[position] = 1;
+        } else {                                        // 방문한 돌다리일 경우 빠져나옴(왼쪽, 오른쪽 따로 탐색하기 때문에 더 이상 방문 필요x. 무한루프 방지)
+            return;
         }
         if (position - arr[position] >= 0) {            // 왼쪽으로 이동하는데 왼쪽 끝 돌보다 안쪽이면
             search(arr, position - arr[position]);      // 다음 칸 이동
