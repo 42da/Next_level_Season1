@@ -8,7 +8,7 @@ import java.util.List;
 import java.awt.Point;
 import java.lang.Math;
 
-public class _14248_태권왕 {
+public class _14562_태권왕 {
     public static Queue<Point> point = new LinkedList<>();      // 점수 담을 queue
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
