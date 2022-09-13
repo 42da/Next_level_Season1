@@ -14,10 +14,10 @@ public class Sort {
         QuickSort QuiS = new QuickSort();
         result = QuiS.Sort(sample);
         */
+
+        // 셸정렬
         ShellSort SheS = new ShellSort();
         result = SheS.Sort(sample);
-        /* 셸정렬
-
-        */
+        /**/
     }
 }
